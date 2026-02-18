@@ -401,34 +401,76 @@ details[open] .sum-ico{transform:rotate(45deg);background:var(--mojo);color:#fff
 .f-text{font-size:15.5px;color:var(--fg-mid);line-height:1.8;margin-bottom:18px;}
 
 /* ═══════════════════════════════════════════
-   CONTACT + MAP
-   ═══════════════════════════════════════════ */
-.contact{background:var(--mojo-d2);padding:88px 80px;}
-.contact .eyebrow{color:var(--mojo-l);}
-.contact .eyebrow::before{background:var(--mojo-l);}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:48px;}
-.map-box{border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.07);height:400px;position:relative;box-shadow:var(--sh-lg);}
-.map-box iframe{width:100%;height:100%;border:none;display:block;}
-.map-badge{
-  position:absolute;bottom:14px;left:14px;
-  background:#fff;border-radius:12px;padding:12px 16px;
-  box-shadow:0 4px 18px rgba(0,0,0,.16);font-size:13px;
-}
-.map-badge strong{display:block;font-family:var(--ff-h);font-size:15px;font-weight:700;color:var(--fg);margin-bottom:2px;}
-.map-badge span{color:var(--fg-mid);}
-.c-rows{display:flex;flex-direction:column;}
-.c-row{display:flex;gap:18px;align-items:flex-start;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.06);}
-.c-row:first-child{padding-top:0;}
-.c-row:last-child{border-bottom:none;}
-.c-ico{
-  width:42px;height:42px;border-radius:12px;flex-shrink:0;
-  background:rgba(213,96,81,.18);border:1px solid rgba(213,96,81,.3);
-  display:flex;align-items:center;justify-content:center;font-size:18px;
-}
-.c-lbl{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:4px;}
-.c-val{font-size:15px;color:#fff;font-weight:500;}
-.c-sub{font-size:12px;color:rgba(255,255,255,.4);margin-top:2px;}
-.c-btns{display:flex;gap:9px;margin-top:28px;flex-wrap:wrap;}
+<!-- CONTACT + MAP -->
+<section class="contact" id="contact">
+  <div class="s-inner">
+    <div class="eyebrow rv">Find Us</div>
+    <h2 class="h2 rv d1" style="color:#fff;">Visit us in Wynberg,<br>Cape Town</h2>
+
+    <div class="contact-grid">
+
+      <!-- MAP -->
+      <div class="map-box rv">
+        <iframe
+          src="https://www.google.com/maps?q=-33.988606,18.469902&z=17&output=embed"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Directed Alignment Technique — 26 Wellington Rd, Wynberg">
+        </iframe>
+
+        <div class="map-badge">
+          <strong>Directed Alignment Technique</strong>
+          <span>26 Wellington Rd, Wynberg, Cape Town, 7800</span>
+        </div>
+      </div>
+
+      <!-- CONTACT DETAILS -->
+      <div class="rv d1">
+        <div class="c-rows">
+
+          <div class="c-row">
+            <div class="c-ico">📍</div>
+            <div>
+              <div class="c-lbl">Address</div>
+              <div class="c-val">26 Wellington Rd, Wynberg</div>
+              <div class="c-sub">Cape Town, 7800</div>
+            </div>
+          </div>
+
+          <div class="c-row">
+            <div class="c-ico">📞</div>
+            <div>
+              <div class="c-lbl">Phone & WhatsApp</div>
+              <div class="c-val">
+                <a href="tel:+27699413776" style="color:#fff;">069 941 3776</a>
+              </div>
+              <div class="c-sub">Call or WhatsApp</div>
+            </div>
+          </div>
+
+          <div class="c-row">
+            <div class="c-ico">🕐</div>
+            <div>
+              <div class="c-lbl">Hours</div>
+              <div class="c-val">Mon–Thu · Morning sessions</div>
+              <div class="c-sub">Mon 8:30–2pm · Tue–Thu 9:30am–1:30pm</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="c-btns">
+          <a href="tel:+27699413776" class="btn btn-primary">📞 Call Now</a>
+          <a href="https://wa.me/27699413776" target="_blank" class="btn btn-wa">💬 WhatsApp</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=-33.988606,18.469902" target="_blank" class="btn btn-ghost">📍 Directions</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
 /* ═══════════════════════════════════════════
    FORM
